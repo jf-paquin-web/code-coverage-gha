@@ -1,13 +1,12 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  filename:
+    description: 'The path to HTML or XML document'
     required: true
-    default: 'World'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  result:
+    description: 'Code coverage percent'
 runs:
   using: 'node12'
   main: 'dist/index.js'
